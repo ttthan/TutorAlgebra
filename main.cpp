@@ -23,12 +23,14 @@ void testConstante()
 
 void testCosinus()
 {
-//    // c = cos(PI/3)
+    // c = cos(PI/3)
     Cos * c = new Cos(new Constante(M_PI/3.0));
     cout << *c << " = " << c->eval() << endl;
-//    delete c;
-//    cout << "destruction automatique des variables locales allouees sur la PILE: ICI AUCUNE " << endl;
+    delete c;
+    cout << "destruction automatique des variables locales allouees sur la PILE: ICI AUCUNE " << endl;
+
 }
+
 
 
 int main()

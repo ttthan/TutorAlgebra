@@ -63,14 +63,14 @@
 1454106499 source:e:\study\c++\projet\projet_cpp\src\unaire.cpp
 	"unaire.h"
 
-1455112185 source:e:\github\tutoralgebra\main.cpp
+1459991636 source:e:\github\tutoralgebra\main.cpp
 	<iostream>
 	<fstream>
 	"include\expression.h"
 	"constante.h"
 	"cos.h"
 
-1454111378 e:\github\tutoralgebra\include\expression.h
+1459990937 e:\github\tutoralgebra\include\expression.h
 	<iostream>
 	<sstream>
 	<string>
@@ -78,21 +78,21 @@
 	<map>
 	<set>
 
-1454111009 e:\github\tutoralgebra\include\constante.h
+1459990604 e:\github\tutoralgebra\include\constante.h
 
-1454111243 e:\github\tutoralgebra\include\cos.h
+1459990604 e:\github\tutoralgebra\include\cos.h
 	"unaire.h"
 
-1454110087 e:\github\tutoralgebra\include\unaire.h
+1459992021 e:\github\tutoralgebra\include\unaire.h
 	"expression.h"
 
-1454110952 source:e:\github\tutoralgebra\src\constante.cpp
+1459990604 source:e:\github\tutoralgebra\src\constante.cpp
 	"expression.h"
 	"constante.h"
 	<fonction.h>
 	<math.h>
 
-1454104912 e:\github\tutoralgebra\include\fonction.h
+1459990604 e:\github\tutoralgebra\include\fonction.h
 	<iostream>
 	<sstream>
 	<string>
@@ -100,9 +100,18 @@
 	<map>
 	<set>
 
-1454110210 source:e:\github\tutoralgebra\src\cos.cpp
+1459990604 source:e:\github\tutoralgebra\src\cos.cpp
 	"cos.h"
 
-1454110348 source:e:\github\tutoralgebra\src\expression.cpp
+1459990942 source:e:\github\tutoralgebra\src\expression.cpp
+	"expression.h"
+
+1459990604 source:e:\github\tutoralgebra\src\unaire.cpp
+	"unaire.h"
+
+1459991746 source:e:\github\tutoralgebra\src\binaire.cpp
+	"binaire.h"
+
+1459991988 e:\github\tutoralgebra\include\binaire.h
 	"expression.h"
 
