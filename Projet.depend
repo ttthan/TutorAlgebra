@@ -63,7 +63,7 @@
 1454106499 source:e:\study\c++\projet\projet_cpp\src\unaire.cpp
 	"unaire.h"
 
-1460123574 source:e:\github\tutoralgebra\main.cpp
+1460148647 source:e:\github\tutoralgebra\main.cpp
 	<iostream>
 	<fstream>
 	"expression.h"
@@ -73,6 +73,7 @@
 	"somme.h"
 	"produit.h"
 	"superieur.h"
+	"variable.h"
 
 1460123514 e:\github\tutoralgebra\include\expression.h
 	<iostream>
@@ -148,4 +149,12 @@
 
 1460122724 e:\github\tutoralgebra\include\superieur.h
 	"binaire.h"
+
+1460148666 source:e:\github\tutoralgebra\src\variable.cpp
+	"variable.h"
+
+1460148333 e:\github\tutoralgebra\include\variable.h
+	<iostream>
+	<map>
+	"expression.h"
 

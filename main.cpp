@@ -8,6 +8,7 @@
 #include "somme.h"
 #include "produit.h"
 #include "superieur.h"
+#include "variable.h"
 
 
 using namespace std;
@@ -51,11 +52,34 @@ void testBinaire()
     cout << "destruction automatique des variables locales allouees sur la PILE: ICI COMP" << endl;
 }
 
+void testVariable1()
+{
+    // x = 3
+    Variable x("x", 3.0);
+    // y = 0
+    Variable y("y");
+    cout << x << " = " << x.eval() << endl;
+    cout << y << " = " << y.eval() << endl;
+
+    // exp = 1 + 2 * x
+//    Expression * exp = new Somme(new Constante(1.0), new Produit(new Constante(2.0), &x));
+//    // a = (y <- exp)
+//    Affectation * a = new Affectation(new Variable("y"), exp->clone());
+//    cout << *a << " = " << a->eval() << endl;
+//    cout << y << " = " << y.eval() << endl;
+//
+//    Variable::effacerMemoire();
+//    delete exp; // OK car il existe un clone
+//    delete a;
+//    cout << "destruction automatique des variables locales allouees sur la PILE: ICI X et Y" << endl;
+}
+
 int main()
 {
-    testConstante();
-   testCosinus();
-   testBinaire();
+    //testConstante();
+    //testCosinus();
+    //testBinaire();
+    testVariable1();
     return 0;
 }
 
