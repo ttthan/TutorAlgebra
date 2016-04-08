@@ -1,0 +1,29 @@
+Projet à rendre par binôme sous la forme d'une archive NOM1_NOM2.zip contenant un README, un makefile, les .h, les .cpp.
+
+Une documentation des sources doit être générée automatiquement. Conseil, utiliser doxygen.
+
+Un rapport doit fournir votre analyse et votre conception.
+
+Les éléments suivants doivent notamment y figurer :
+
+une introduction exposant clairement les objectifs, limites, choix du projet
+
+un mode d’emploi de l’application
+
+des schémas décrivant l’architecture fonctionnelle
+
+des schémas décrivant les structures de données utilisées
+
+une explication en français et/ou pseudo-code et/ou langage d’implémentation choisi des principales fonctions (code à fournir et à commenter)
+
+une conclusion résumant le travail effectué et ouvrant des perspectives
+
+une bibliographie utilisée
+
+une table des matières
+
+Les classes conçues doivent être détaillées aussi bien leur interface que leur implémentation.
+
+Votre application doit être testée grâce à un code client assez représentatif. Un jeu d'essais (code client), le plus exhaustif possible, est donc à fournir. Des tests unitaires pourront être écrits.
+
+Une bonne idée est de réaliser le rapport en même temps que le développement.

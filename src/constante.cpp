@@ -9,7 +9,7 @@ Constante::Constante()
     //ctor
 }
 
-Constante::Constante(const double val) : Expression(string_from_double(val)), _value(val)
+Constante::Constante(const double val) : Expression(string_from_double(val)), _valeur(val)
 {
 
 }
@@ -21,7 +21,14 @@ Constante::~Constante()
 
 double Constante::eval() const
 {
-    return _value;
+    return _valeur;
+}
+
+string Constante::afficher() const
+{
+    std::ostringstream os;
+    os << _valeur;
+    return os.str();
 }
 
 Expression* Constante::clone() const
@@ -29,9 +36,10 @@ Expression* Constante::clone() const
     return new Constante(*this);
 }
 
-ostream& operator<<(ostream& os, const Constante & a)
+ostream& operator<<(ostream& os, const Constante & constante)
 {
-//    os << "cde";
+    os << constante.afficher();
     return os;
 }
+
 

@@ -63,14 +63,18 @@
 1454106499 source:e:\study\c++\projet\projet_cpp\src\unaire.cpp
 	"unaire.h"
 
-1459991636 source:e:\github\tutoralgebra\main.cpp
+1460098251 source:e:\github\tutoralgebra\main.cpp
 	<iostream>
 	<fstream>
-	"include\expression.h"
+	"expression.h"
 	"constante.h"
 	"cos.h"
+	"sin.h"
+	"somme.h"
+	"produit.h"
+	"superieur.h"
 
-1459990937 e:\github\tutoralgebra\include\expression.h
+1460096163 e:\github\tutoralgebra\include\expression.h
 	<iostream>
 	<sstream>
 	<string>
@@ -78,15 +82,15 @@
 	<map>
 	<set>
 
-1459990604 e:\github\tutoralgebra\include\constante.h
+1460095527 e:\github\tutoralgebra\include\constante.h
 
-1459990604 e:\github\tutoralgebra\include\cos.h
+1460096048 e:\github\tutoralgebra\include\cos.h
 	"unaire.h"
 
-1459992021 e:\github\tutoralgebra\include\unaire.h
+1460096176 e:\github\tutoralgebra\include\unaire.h
 	"expression.h"
 
-1459990604 source:e:\github\tutoralgebra\src\constante.cpp
+1460095521 source:e:\github\tutoralgebra\src\constante.cpp
 	"expression.h"
 	"constante.h"
 	<fonction.h>
@@ -100,18 +104,48 @@
 	<map>
 	<set>
 
-1459990604 source:e:\github\tutoralgebra\src\cos.cpp
+1460097059 source:e:\github\tutoralgebra\src\cos.cpp
 	"cos.h"
 
-1459990942 source:e:\github\tutoralgebra\src\expression.cpp
+1460096207 source:e:\github\tutoralgebra\src\expression.cpp
 	"expression.h"
 
-1459990604 source:e:\github\tutoralgebra\src\unaire.cpp
+1460096221 source:e:\github\tutoralgebra\src\unaire.cpp
 	"unaire.h"
 
-1459991746 source:e:\github\tutoralgebra\src\binaire.cpp
+1460096195 source:e:\github\tutoralgebra\src\binaire.cpp
 	"binaire.h"
 
-1459991988 e:\github\tutoralgebra\include\binaire.h
+1460096153 e:\github\tutoralgebra\include\binaire.h
 	"expression.h"
+
+1459995115 source:e:\github\tutoralgebra\src\plus.cpp
+	"plus.h"
+
+1459997168 e:\github\tutoralgebra\include\plus.h
+	"binaire.h"
+
+1460097013 source:e:\github\tutoralgebra\src\sin.cpp
+	"sin.h"
+
+1459993409 e:\github\tutoralgebra\include\sin.h
+	"unaire.h"
+
+1460097118 source:e:\github\tutoralgebra\src\produit.cpp
+	"produit.h"
+
+1460082534 e:\github\tutoralgebra\include\produit.h
+	"binaire.h"
+
+1460096975 source:e:\github\tutoralgebra\src\somme.cpp
+	"somme.h"
+
+1460096570 e:\github\tutoralgebra\include\somme.h
+	"binaire.h"
+
+1460098440 source:e:\github\tutoralgebra\src\superieur.cpp
+	"superieur.h"
+
+1460098496 e:\github\tutoralgebra\include\superieur.h
+	"binaire.h"
 

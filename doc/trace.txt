@@ -1,0 +1,141 @@
+TRACE DE L'EXECUTION
+
+Le choix est 11
+ 
+0 : constante
+ 1 : cosinus
+ 2 : binaire
+ 3 : variable1
+ 4 : variable2
+ 5 : conditionnel
+ 6 : if then else
+ 7 : bloc
+ 8 : boucle avec une seule expression
+ 9 : boucle avec bloc d'expressions
+ 10 : boucles imbriquées
+ 11 : tous les tests
+ 666 : quitter
+******************************************************************
+
+choix : c = 5
+clone de c = 5
+******************************************************************
+
+cos(1.0472) = 0.5
+destruction automatique des variables locales allouees sur la PILE: ICI AUCUNE 
+******************************************************************
+
+s : (1 + (2 * sin(0.523599))) = 2
+clone de s : (1 + (2 * sin(0.523599))) = 2
+((1 + (2 * sin(0.523599))) > 1.8) = 1
+destruction automatique des variables locales allouees sur la PILE: ICI COMP
+******************************************************************
+
+x = 3
+y = 0
+(y <- (1 + (2 * x))) = 7
+y = 7
+destruction automatique des variables locales allouees sur la PILE: ICI X et Y
+******************************************************************
+
+x = 1.0472
+x = -8.9528
+******************************************************************
+
+x = 8
+((x > 0)) ? (x + 10) : (x + 10)
+
+ EVAL ternaire : 18
+x = 8
+x = 18
+((x > 0)) ? (x + 10) : (x + 10)
+
+ EVAL ternaire : 28
+x = 18
+******************************************************************
+
+x = 8
+if ((x > 0)) {
+	(x <- (x + 10))
+} else {
+	(x <- (x * 10))
+}
+ EVAL if then else : 18
+x = 18
+******************************************************************
+
+x = 5
+y = 3
+{
+	(x <- (x + 9))
+	if ((x > 20)) {
+	(x <- (x + 10))
+} else {
+	(x <- (x * 10))
+}
+	(y <- (x + -100))
+}
+ EVAL bloc : 40
+x = 140
+y = 40
+******************************************************************
+
+x = 3
+i = 0
+for ((i <- 1); (x > (i + -1)); (i <- (i + 1))) {
+	(res <- (res * i))
+}
+ EVAL pour : 6
+3! = 6
+x = 5
+for ((i <- 1); (x > (i + -1)); (i <- (i + 1))) {
+	(res <- (res * i))
+}
+ EVAL pour : 120
+5! = 120
+******************************************************************
+
+x = 3
+i = 0
+for ((i <- 1); (4 > i); (i <- (i + 1))) {
+	{
+	(x <- (x + 9))
+	if ((x > 20)) {
+	(x <- (x + 10))
+} else {
+	(x <- (x * 10))
+}
+	(y <- (x + -100))
+}
+}
+ EVAL pour : 58
+x = 158
+y = 58
+VERIFICATION
+ x = 158
+ y = 58
+******************************************************************
+
+x = 3
+i = 0
+y = 5
+j = 0
+for ((i <- 1); (4 > i); (i <- (i + 1))) {
+	for ((j <- 1); (3 > j); (j <- (j + 1))) {
+	{
+	(x <- (x + 9))
+	if ((x > 20)) {
+	(x <- (x + 10))
+} else {
+	(x <- (x * 10))
+}
+	(y <- (x + -100))
+}
+}
+}
+ EVAL pour1 : 115
+x = 215
+y = 115
+VERIFICATION
+ x = 215
+ y = 115

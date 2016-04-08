@@ -14,7 +14,7 @@ Unaire::~Unaire()
     //dtor
 }
 
-string Unaire::getString()
+string Unaire::afficher()
 {
-return Expression::_nom+"("+ _op->getString() +")";
+return Expression::_nom+"("+ _op->afficher() +")";
 }

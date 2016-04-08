@@ -16,7 +16,7 @@ Binaire::Binaire(Expression *op1, Expression *op2, const string& name):Expressio
 
 }
 
-string Binaire::getString()
+string Binaire::afficher()
 {
-    return "(" + _gauche->getString() + Expression::_nom + _droite->getString() + ")";
+    return "(" + _gauche->afficher() + Expression::_nom + _droite->afficher() + ")";
 }

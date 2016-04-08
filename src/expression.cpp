@@ -14,7 +14,7 @@ Expression::~Expression()
     //dtor
 }
 
-string Expression::getString() const
+string Expression::afficher() const
 {
     return _nom;
 }
@@ -27,11 +27,12 @@ Expression* Expression::clone() const
 double Expression::eval() const
 {
 
+
 }
 
 ostream& operator<<(ostream& os, const Expression & a)
 {
-    os << a.getString();
+    os << a.afficher();
     return os;
 }
 

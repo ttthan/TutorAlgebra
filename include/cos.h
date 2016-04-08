@@ -9,6 +9,7 @@ class Cos : public Unaire
         Cos(Expression *, const string& name="cos");
         virtual ~Cos();
         double eval() const;
+
     protected:
         double val;
     private:

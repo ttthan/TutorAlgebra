@@ -6,7 +6,7 @@ Cos::Cos()
     //ctor
 }
 
-Cos::Cos(Expression *exp, const string&name):Unaire(exp,name)
+Cos::Cos(Expression *exp, const string&name):Unaire(exp,"cos("+exp->afficher()+")")
 {
 
 }
@@ -18,5 +18,5 @@ Cos::~Cos()
 
 double Cos::eval() const
 {
- return cos(_op->eval());
+    return cos(_op->eval());
 }

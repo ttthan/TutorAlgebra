@@ -8,7 +8,7 @@ class Binaire : public Expression
         Binaire();
         virtual ~Binaire();
         Binaire(Expression *, Expression *, const string& name="binaire");
-        virtual string getString();
+        virtual string afficher();
     protected:
         Expression *_gauche, *_droite;
     private:
