@@ -1,8 +1,10 @@
 #include "expression.h"
 
+static set<Expression*> _pool;
+
 Expression::Expression()
 {
-    //ctor
+    _pool.insert(this);
 }
 
 Expression::Expression(const string& nom) : _nom(nom) {
@@ -11,7 +13,7 @@ Expression::Expression(const string& nom) : _nom(nom) {
 
 Expression::~Expression()
 {
-    //dtor
+    _pool.erase(this);
 }
 
 string Expression::afficher() const
@@ -36,3 +38,9 @@ ostream& operator<<(ostream& os, const Expression & a)
     return os;
 }
 
+static void toutLiberer()
+{
+    set<Expression*>::iterator it;
+    while ( (it = _pool.begin()) != _pool.end() )
+    delete (*it);
+}

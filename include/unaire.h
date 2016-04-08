@@ -8,7 +8,7 @@ class Unaire : public Expression
         Unaire();
         Unaire(Expression *, const string& name="unaire");
         virtual ~Unaire();
-        virtual string getString();
+        virtual string afficher();
     protected:
         Expression *_op;
     private:

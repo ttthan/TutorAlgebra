@@ -19,7 +19,7 @@ class Expression
         Expression* clone() const;
         virtual double eval() const;
         friend ostream& operator<<(ostream&, const Expression &);
-
+        static void toutLiberer();
     protected:
 //        double val;
         string _nom;
