@@ -41,3 +41,9 @@ ostream & operator << (ostream & os, const Variable & variable)
 	os << variable.afficher();
 	return os;
 }
+
+
+void Variable::effacerMemoire()
+{
+	_variables.clear();
+}

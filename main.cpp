@@ -9,6 +9,7 @@
 #include "produit.h"
 #include "superieur.h"
 #include "variable.h"
+#include "affectation.h"
 
 
 using namespace std;
@@ -62,16 +63,28 @@ void testVariable1()
     cout << y << " = " << y.eval() << endl;
 
     // exp = 1 + 2 * x
-//    Expression * exp = new Somme(new Constante(1.0), new Produit(new Constante(2.0), &x));
-//    // a = (y <- exp)
-//    Affectation * a = new Affectation(new Variable("y"), exp->clone());
-//    cout << *a << " = " << a->eval() << endl;
-//    cout << y << " = " << y.eval() << endl;
-//
-//    Variable::effacerMemoire();
-//    delete exp; // OK car il existe un clone
-//    delete a;
-//    cout << "destruction automatique des variables locales allouees sur la PILE: ICI X et Y" << endl;
+    Expression * exp = new Somme(new Constante(1.0), new Produit(new Constante(2.0), &x));
+    // a = (y <- exp)
+    Affectation * a = new Affectation(new Variable("y"), exp->clone());
+    cout << *a << " = " << a->eval() << endl;
+    cout << y << " = " << y.eval() << endl;
+
+    Variable::effacerMemoire();
+    delete exp; // OK car il existe un clone
+    delete a;
+    cout << "destruction automatique des variables locales allouees sur la PILE: ICI X et Y" << endl;
+}
+
+void testVariable2()
+{
+    // x = PI/3
+    Variable * x = new Variable("x", M_PI/3.0);
+    cout << *x << " = " << x->eval() << endl;
+    // x = x + (-10)
+    x->set( x->eval() + -10);
+    cout << *x << " = " << x->eval() << endl;
+
+    Variable::effacerMemoire();
 }
 
 int main()
@@ -79,7 +92,8 @@ int main()
     //testConstante();
     //testCosinus();
     //testBinaire();
-    testVariable1();
+    //testVariable1();
+    testVariable2();
     return 0;
 }
 

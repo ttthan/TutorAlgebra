@@ -16,6 +16,7 @@ class Variable : public Expression
         string afficher() const;
         double set(double);
         friend ostream & operator << (ostream &, const Variable &);
+        static void effacerMemoire();
     protected:
     private:
         const std::string _id;
