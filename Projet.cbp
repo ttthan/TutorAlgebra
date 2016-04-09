@@ -34,7 +34,9 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/affectation.h" />
 		<Unit filename="include/binaire.h" />
+		<Unit filename="include/conditionnel.h" />
 		<Unit filename="include/constante.h" />
 		<Unit filename="include/cos.h" />
 		<Unit filename="include/expression.h" />
@@ -44,8 +46,11 @@
 		<Unit filename="include/somme.h" />
 		<Unit filename="include/superieur.h" />
 		<Unit filename="include/unaire.h" />
+		<Unit filename="include/variable.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/affectation.cpp" />
 		<Unit filename="src/binaire.cpp" />
+		<Unit filename="src/conditionnel.cpp" />
 		<Unit filename="src/constante.cpp" />
 		<Unit filename="src/cos.cpp" />
 		<Unit filename="src/expression.cpp" />
@@ -54,6 +59,7 @@
 		<Unit filename="src/somme.cpp" />
 		<Unit filename="src/superieur.cpp" />
 		<Unit filename="src/unaire.cpp" />
+		<Unit filename="src/variable.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

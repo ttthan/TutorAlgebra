@@ -15,9 +15,9 @@ class Expression
         Expression();
         Expression(const string&);
         virtual ~Expression();
-        string afficher() const;
-        Expression* clone() const;
-        virtual double eval() const;
+        virtual string afficher() const;
+        virtual Expression *clone() const = 0;
+        virtual double eval() const=0;
         friend ostream& operator<<(ostream&, const Expression &);
         static void toutLiberer();
     protected:

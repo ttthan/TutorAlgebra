@@ -10,6 +10,7 @@ class Affectation : public Binaire
         Affectation(Variable*, Expression*);
         double eval() const;
         virtual ~Affectation();
+        Expression* clone() const;
         string afficher() const;
         friend ostream & operator << (ostream & os, const Affectation & affectation);
     protected:

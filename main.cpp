@@ -49,8 +49,8 @@ void testBinaire()
     Superieur comp(s->clone(), new Constante(1.8));
     cout << comp << " = " << (bool)comp.eval() << endl;
 
-    delete s;
-    delete sbis;
+    //delete s;
+    //delete sbis;
     cout << "destruction automatique des variables locales allouees sur la PILE: ICI COMP" << endl;
 }
 
@@ -71,8 +71,8 @@ void testVariable1()
     cout << y << " = " << y.eval() << endl;
 
     Variable::effacerMemoire();
-    delete exp; // OK car il existe un clone
-    delete a;
+    //delete exp; // OK car il existe un clone
+    //delete a;
     cout << "destruction automatique des variables locales allouees sur la PILE: ICI X et Y" << endl;
 }
 
@@ -113,11 +113,11 @@ void testConditionnel ()
 
 int main()
 {
-    //testConstante();
-    //testCosinus();
-    //testBinaire();
-    //testVariable1();
-    //testVariable2();
+    testConstante();
+    testCosinus();
+    testBinaire();
+    testVariable1();
+    testVariable2();
     testConditionnel();
     return 0;
 }

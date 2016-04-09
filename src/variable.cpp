@@ -20,7 +20,12 @@ Variable::~Variable()
     //dtor
 }
 
-double Variable::eval()
+Expression* Variable::clone() const
+{
+	return new Variable(*this);
+}
+
+double Variable::eval() const
 {
     return _variables[_id];
 }

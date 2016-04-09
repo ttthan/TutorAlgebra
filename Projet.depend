@@ -63,7 +63,7 @@
 1454106499 source:e:\study\c++\projet\projet_cpp\src\unaire.cpp
 	"unaire.h"
 
-1460166333 source:e:\github\tutoralgebra\main.cpp
+1460236525 source:e:\github\tutoralgebra\main.cpp
 	<iostream>
 	<fstream>
 	"expression.h"
@@ -77,7 +77,7 @@
 	"affectation.h"
 	"conditionnel.h"
 
-1460164877 e:\github\tutoralgebra\include\expression.h
+1460236773 e:\github\tutoralgebra\include\expression.h
 	<iostream>
 	<sstream>
 	<string>
@@ -85,21 +85,21 @@
 	<map>
 	<set>
 
-1460164877 e:\github\tutoralgebra\include\constante.h
+1460178819 e:\github\tutoralgebra\include\constante.h
 
-1460164877 e:\github\tutoralgebra\include\cos.h
+1460178506 e:\github\tutoralgebra\include\cos.h
 	"unaire.h"
 
-1460164877 e:\github\tutoralgebra\include\unaire.h
+1460171548 e:\github\tutoralgebra\include\unaire.h
 	"expression.h"
 
-1460164877 source:e:\github\tutoralgebra\src\constante.cpp
+1460174052 source:e:\github\tutoralgebra\src\constante.cpp
 	"expression.h"
 	"constante.h"
 	<fonction.h>
 	<math.h>
 
-1460164877 e:\github\tutoralgebra\include\fonction.h
+1460171548 e:\github\tutoralgebra\include\fonction.h
 	<iostream>
 	<sstream>
 	<string>
@@ -107,19 +107,19 @@
 	<map>
 	<set>
 
-1460164877 source:e:\github\tutoralgebra\src\cos.cpp
+1460178497 source:e:\github\tutoralgebra\src\cos.cpp
 	"cos.h"
 
-1460164877 source:e:\github\tutoralgebra\src\expression.cpp
+1460236833 source:e:\github\tutoralgebra\src\expression.cpp
 	"expression.h"
 
-1460164877 source:e:\github\tutoralgebra\src\unaire.cpp
+1460171548 source:e:\github\tutoralgebra\src\unaire.cpp
 	"unaire.h"
 
-1460164877 source:e:\github\tutoralgebra\src\binaire.cpp
+1460236319 source:e:\github\tutoralgebra\src\binaire.cpp
 	"binaire.h"
 
-1460164877 e:\github\tutoralgebra\include\binaire.h
+1460178468 e:\github\tutoralgebra\include\binaire.h
 	"expression.h"
 
 1459995115 source:e:\github\tutoralgebra\src\plus.cpp
@@ -128,49 +128,50 @@
 1459997168 e:\github\tutoralgebra\include\plus.h
 	"binaire.h"
 
-1460164877 source:e:\github\tutoralgebra\src\sin.cpp
+1460178623 source:e:\github\tutoralgebra\src\sin.cpp
 	"sin.h"
 
-1460164877 e:\github\tutoralgebra\include\sin.h
+1460178578 e:\github\tutoralgebra\include\sin.h
 	"unaire.h"
 
-1460164877 source:e:\github\tutoralgebra\src\produit.cpp
+1460236401 source:e:\github\tutoralgebra\src\produit.cpp
 	"produit.h"
 
-1460164877 e:\github\tutoralgebra\include\produit.h
+1460236600 e:\github\tutoralgebra\include\produit.h
 	"binaire.h"
 
-1460164877 source:e:\github\tutoralgebra\src\somme.cpp
+1460237202 source:e:\github\tutoralgebra\src\somme.cpp
 	"somme.h"
 
-1460164877 e:\github\tutoralgebra\include\somme.h
+1460232660 e:\github\tutoralgebra\include\somme.h
 	"binaire.h"
 
-1460167029 source:e:\github\tutoralgebra\src\superieur.cpp
+1460236693 source:e:\github\tutoralgebra\src\superieur.cpp
 	"superieur.h"
 
-1460164877 e:\github\tutoralgebra\include\superieur.h
+1460178590 e:\github\tutoralgebra\include\superieur.h
 	"binaire.h"
+	"expression.h"
 
-1460165261 source:e:\github\tutoralgebra\src\variable.cpp
+1460179623 source:e:\github\tutoralgebra\src\variable.cpp
 	"variable.h"
 
-1460165285 e:\github\tutoralgebra\include\variable.h
+1460179594 e:\github\tutoralgebra\include\variable.h
 	<iostream>
 	<map>
 	"expression.h"
 
-1460164954 e:\github\tutoralgebra\include\affectation.h
+1460178262 e:\github\tutoralgebra\include\affectation.h
 	"binaire.h"
 	"variable.h"
 
-1460164945 source:e:\github\tutoralgebra\src\affectation.cpp
+1460178280 source:e:\github\tutoralgebra\src\affectation.cpp
 	"affectation.h"
 
-1460167098 e:\github\tutoralgebra\include\conditionnel.h
+1460230503 e:\github\tutoralgebra\include\conditionnel.h
 	"expression.h"
 	"binaire.h"
 
-1460167185 source:e:\github\tutoralgebra\src\conditionnel.cpp
+1460234875 source:e:\github\tutoralgebra\src\conditionnel.cpp
 	"conditionnel.h"
 

@@ -7,8 +7,11 @@ class Produit : public Binaire
     public:
         Produit();
         virtual ~Produit();
-        virtual double eval();
-        Produit(Expression *, Expression *, const string& name="+");
+        double eval() const;
+        Expression* clone() const;
+        string afficher() const;
+        Produit(Expression *, Expression *, const string& name="*");
+        friend ostream& operator<<(ostream&, const Produit &);
 
     protected:
     private:

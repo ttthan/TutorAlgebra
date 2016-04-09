@@ -16,6 +16,12 @@ Cos::~Cos()
     //dtor
 }
 
+Expression* Cos::clone() const
+{
+	return new Cos(*this);
+}
+
+
 double Cos::eval() const
 {
     return cos(_op->eval());

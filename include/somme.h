@@ -7,10 +7,11 @@ class Somme : public Binaire
     public:
         Somme();
         virtual ~Somme();
-        virtual double eval();
+        double eval() const;
+        Expression *clone() const;
         string afficher() const;
         Somme(Expression *, Expression *, const string& name="+");
-        friend ostream& operator<<(ostream&, const Expression &);
+        friend ostream& operator<<(ostream&, const Somme &);
 
     protected:
     private:

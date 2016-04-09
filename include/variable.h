@@ -11,9 +11,10 @@ class Variable : public Expression
         Variable(const string&, double);
         Variable();
         Variable(const string&);
-        double eval();
+        double eval() const;
         virtual ~Variable();
         string afficher() const;
+        Expression* clone() const;
         double set(double);
         friend ostream & operator << (ostream &, const Variable &);
         static void effacerMemoire();

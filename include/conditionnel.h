@@ -9,6 +9,7 @@ class Conditionnel : public Expression
         Conditionnel();
         Conditionnel(Binaire*, Expression*, Expression*);
         virtual ~Conditionnel();
+        Expression *clone() const;
         string afficher() const;
         friend ostream & operator << (ostream & os, const Conditionnel &);
         double eval() const;

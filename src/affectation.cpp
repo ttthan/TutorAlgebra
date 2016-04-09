@@ -11,6 +11,11 @@ Affectation::~Affectation()
     //dtor
 }
 
+Expression* Affectation::clone() const
+{
+	return new Affectation(*this);
+}
+
 Affectation::Affectation(Variable* variable, Expression* expression): Binaire(variable,expression,"<-"), _variable(variable),_expression(expression)
 {
     _variable->set(_expression->eval());

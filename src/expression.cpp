@@ -16,21 +16,13 @@ Expression::~Expression()
     _pool.erase(this);
 }
 
+
+
 string Expression::afficher() const
 {
     return _nom;
 }
 
-Expression* Expression::clone() const
-{
-
-}
-
-double Expression::eval() const
-{
-
-
-}
 
 ostream& operator<<(ostream& os, const Expression & a)
 {

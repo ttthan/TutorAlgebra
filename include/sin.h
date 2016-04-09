@@ -8,6 +8,7 @@ class Sin : public Unaire
         Sin();
         Sin(Expression *, const string& name="sin");
         virtual ~Sin();
+        Expression* clone() const;
         double eval() const;
     protected:
         double val;

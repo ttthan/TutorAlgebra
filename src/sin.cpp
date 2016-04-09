@@ -16,6 +16,11 @@ Sin::~Sin()
     //dtor
 }
 
+Expression* Sin::clone() const
+{
+	return new Sin(*this);
+}
+
 double Sin::eval() const
 {
     return sin(_op->eval());
