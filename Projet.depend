@@ -63,7 +63,7 @@
 1454106499 source:e:\study\c++\projet\projet_cpp\src\unaire.cpp
 	"unaire.h"
 
-1460164992 source:e:\github\tutoralgebra\main.cpp
+1460166333 source:e:\github\tutoralgebra\main.cpp
 	<iostream>
 	<fstream>
 	"expression.h"
@@ -75,6 +75,7 @@
 	"superieur.h"
 	"variable.h"
 	"affectation.h"
+	"conditionnel.h"
 
 1460164877 e:\github\tutoralgebra\include\expression.h
 	<iostream>
@@ -145,7 +146,7 @@
 1460164877 e:\github\tutoralgebra\include\somme.h
 	"binaire.h"
 
-1460164877 source:e:\github\tutoralgebra\src\superieur.cpp
+1460167029 source:e:\github\tutoralgebra\src\superieur.cpp
 	"superieur.h"
 
 1460164877 e:\github\tutoralgebra\include\superieur.h
@@ -165,4 +166,11 @@
 
 1460164945 source:e:\github\tutoralgebra\src\affectation.cpp
 	"affectation.h"
+
+1460167098 e:\github\tutoralgebra\include\conditionnel.h
+	"expression.h"
+	"binaire.h"
+
+1460167185 source:e:\github\tutoralgebra\src\conditionnel.cpp
+	"conditionnel.h"
 

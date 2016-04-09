@@ -10,7 +10,7 @@ Superieur::~Superieur()
     //dtor
 }
 
-Superieur::Superieur(Expression *exp1, Expression *exp2):Binaire(exp1,exp2)
+Superieur::Superieur(Expression *exp1, Expression *exp2):Binaire(exp1,exp2,">")
 {
 
 }

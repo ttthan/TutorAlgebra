@@ -10,6 +10,7 @@
 #include "superieur.h"
 #include "variable.h"
 #include "affectation.h"
+#include "conditionnel.h"
 
 
 using namespace std;
@@ -87,13 +88,37 @@ void testVariable2()
     Variable::effacerMemoire();
 }
 
+
+void testConditionnel ()
+{
+    // x = 0
+    Variable * x = new Variable("x", 8);
+
+    // expr = (x > 0) ? x + 10 : x * 10
+    Conditionnel * expr =
+        new Conditionnel(new Superieur(x, new Constante(0.0)),
+                         new Somme(x, new Constante(10.0)),
+                         new Produit(x, new Constante(10.0)));
+
+    cout << *x << " = " << x->eval() << endl;
+    cout << *expr <<"\n EVAL ternaire : " << expr->eval() << endl;;
+    cout << *x << " = " << x->eval() << endl;
+    // x = expr OU ENCORE x = (x > 0) ? x + 10 : x * 10
+    x->set(expr->eval());
+    cout << *x << " = " << x->eval() << endl;
+    cout << *expr <<  "\n EVAL ternaire : " << expr->eval() << endl;
+    cout << *x << " = " << x->eval() << endl;
+    Variable::effacerMemoire();
+}
+
 int main()
 {
     //testConstante();
     //testCosinus();
     //testBinaire();
     //testVariable1();
-    testVariable2();
+    //testVariable2();
+    testConditionnel();
     return 0;
 }
 
