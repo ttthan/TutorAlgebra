@@ -23,27 +23,10 @@ string Bloc::afficher() const
 	for (it = _exp.begin(); it != _exp.end(); it++)
 	{
 	    Expression * tmp = *it;
-	    str.append("");
-	    str.append(tmp->afficher());
-	    str.append("\n");
-		//str += (*it)->afficher();
-
+	    str.append(""+tmp->afficher()+"/n");
 	}
 	str += "\n}";
 	return str;
-//    list<Expression *>::const_iterator it = _exp.begin();
-//	string str("{\n");
-//	while (it != _exp.end())
-//	{
-//		Expression * tmp = *it;
-//		str.append("\t");
-//		str.append(tmp->afficher());
-//		str.append("\n");
-//		it++;
-//	}
-//	str.append("}");
-//	return str;
-
 }
 
 Expression* Bloc::clone() const
@@ -69,6 +52,11 @@ double Bloc::eval() const
 	return value;
     Expression * tmp = _exp.back();
 	return tmp->eval();
+}
+
+Expression* Bloc::deriver(const string &var)
+{
+
 }
 
 void Bloc::add(Expression* expression)

@@ -4,6 +4,7 @@
 #include <iostream>
 #include <map>
 #include "expression.h"
+#include "constante.h"
 
 class Variable : public Expression
 {
@@ -12,6 +13,7 @@ class Variable : public Expression
         Variable();
         Variable(const string&);
         double eval() const;
+        Expression *deriver(const string &);
         virtual ~Variable();
         string afficher() const;
         Expression* clone() const;

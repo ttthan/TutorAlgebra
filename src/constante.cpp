@@ -24,6 +24,12 @@ double Constante::eval() const
     return _valeur;
 }
 
+Expression* Constante::deriver(const string &var)
+
+{
+
+}
+
 string Constante::afficher() const
 {
     std::ostringstream os;

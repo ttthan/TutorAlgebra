@@ -1,6 +1,6 @@
 #ifndef CONSTANTE_H
 #define CONSTANTE_H
-
+#include "expression.h"
 
 class Constante : public Expression
 {
@@ -9,6 +9,7 @@ class Constante : public Expression
         Constante(const double=0.0);
         virtual ~Constante();
         virtual double eval() const;
+        Expression *deriver(const string &);
         string afficher() const;
         Expression* clone() const;
         friend ostream& operator<<(ostream&, const Constante &);

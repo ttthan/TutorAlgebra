@@ -1,19 +1,16 @@
-
 #include <iostream>
 #include <fstream>
 #include "expression.h"
 #include "constante.h"
-#include "cos.h"
-#include "sin.h"
-#include "somme.h"
-#include "produit.h"
-#include "superieur.h"
+#include "binaire.h"    // contient les sous-classes de Binaire : Somme, Produit, Superieur ....
+#include "unaire.h"     // contient les sous-classes de Unaire : COs, Sin ....
 #include "variable.h"
 #include "affectation.h"
 #include "conditionnel.h"
 #include "ifThenElse.h"
-#include "bloc.h"
 #include "boucle.h"
+#include "bloc.h"
+
 
 
 using namespace std;

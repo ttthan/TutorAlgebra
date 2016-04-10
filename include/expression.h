@@ -17,6 +17,7 @@ class Expression
         virtual ~Expression();
         virtual string afficher() const;
         virtual Expression *clone() const = 0;
+        virtual Expression *deriver(const string&)=0;
         virtual double eval() const=0;
         friend ostream& operator<<(ostream&, const Expression &);
         static void toutLiberer();

@@ -30,6 +30,17 @@ double Variable::eval() const
     return _variables[_id];
 }
 
+Expression* Variable::deriver(const string &var)
+{
+    double value=0.0;
+    if (var==this->afficher())
+        {
+            value = 1.0;
+        }
+    return new Constante(value);
+
+}
+
 string Variable::afficher() const
 {
 	return _id;

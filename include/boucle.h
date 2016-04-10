@@ -12,9 +12,10 @@ class Pour : public Expression
         string afficher() const;
         friend ostream & operator << (ostream & os, const Pour &);
         double eval() const;
+        Expression *deriver(const string &);
     protected:
     private:
-        Expression *_init, *_condition, *_incremente, *_calcul;
+        Expression *_init, *_cond, *_incr, *_calcul;
 };
 
 #endif // BOUCLE_H

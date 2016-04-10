@@ -9,6 +9,7 @@ class Affectation : public Binaire
         Affectation();
         Affectation(Variable*, Expression*);
         double eval() const;
+        Expression *deriver(const string &);
         virtual ~Affectation();
         Expression* clone() const;
         string afficher() const;

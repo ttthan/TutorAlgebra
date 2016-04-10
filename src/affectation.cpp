@@ -29,6 +29,11 @@ double Affectation::eval() const
     //return ((Variable*)_gauche)->set(_droite->eval());
 }
 
+Expression* Affectation::deriver(const string &var)
+{
+
+}
+
 string Affectation::afficher() const
 {
     ostringstream os;

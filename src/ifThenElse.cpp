@@ -31,6 +31,10 @@ Expression* IfThenElse::clone() const
 	return new IfThenElse(*this);
 }
 
+Expression* IfThenElse::deriver(const string &var)
+{
+
+}
 
 ostream & operator << (ostream & os, const IfThenElse & conditionnel)
 {

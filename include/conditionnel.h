@@ -13,6 +13,7 @@ class Conditionnel : public Expression
         string afficher() const;
         friend ostream & operator << (ostream & os, const Conditionnel &);
         double eval() const;
+        Expression *deriver(const string &);
     private:
         Binaire *_cond;
         Expression *_exp1, *_exp2;

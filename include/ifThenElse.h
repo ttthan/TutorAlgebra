@@ -13,6 +13,7 @@ class IfThenElse : public Expression
         string afficher() const;
         friend ostream & operator << (ostream & os, const IfThenElse &);
         double eval() const;
+        Expression *deriver(const string &);
     private:
         Binaire *_cond;
         Expression *_exp1, *_exp2;
