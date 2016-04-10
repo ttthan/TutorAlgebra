@@ -12,6 +12,8 @@
 #include "affectation.h"
 #include "conditionnel.h"
 #include "ifThenElse.h"
+#include "bloc.h"
+#include "boucle.h"
 
 
 using namespace std;
@@ -129,15 +131,90 @@ void testIfThenElse()
     Variable::effacerMemoire();
 }
 
+void testBloc()
+{
+//    // x = 5
+//    Variable * x = new Variable("x", 5);
+//    // bloc = { x = x + 9 }
+//    Bloc * bloc = new Bloc("b1", new Affectation(x, new Somme(x, new Constante(9))));
+//
+//    //  bloc =  {
+//    //              x = x + 9
+//    //              if (x > 20) x = x + 10  else x = x * 10
+//    //          }
+//    bloc->add(new IfThenElse(new Superieur(x, new Constante(20.0)),
+//                             new Affectation(x, new Somme(x, new Constante(10.0))),
+//                             new Affectation(x, new Produit(x, new Constante(10.0)))));
+//    // y = 3
+//    Variable * y = new Variable("y", 3);
+//    //  bloc =  {
+//    //              x = x + 9
+//    //              if (x > 20) x = x + 10  else x = x * 10
+//    //              y = x + -100
+//    //          }
+//    bloc->add(new Affectation(y, new Somme(x, new Constante(-100))));
+//
+//    cout << *x << " = " << x->eval() << endl;
+//    cout << *y << " = " << y->eval() << endl;
+//    cout << *bloc << "\n EVAL bloc : " << bloc->eval() << endl;
+//    cout << *x << " = " << x->eval() << endl;
+//    cout << *y << " = " << y->eval() << endl;
+
+    Variable::effacerMemoire();
+}
+
+
+void testPour1()
+{
+    // x = 3
+    Variable * x = new Variable("x", 3.0);
+    cout << *x << " = " << x->eval() << endl;
+
+    // i = 0
+    Variable * i = new Variable("i");
+    cout << *i << " = " << i->eval() << endl;
+
+    // init = (i = 1)
+    Expression * init = new Affectation(i,new Constante(1));
+    // condition = (x > i - 1)
+    Expression * condition = new Superieur(x, new Somme(i, new Constante(-1)));
+    // actionFinDeBoucle = (i = i + 1)
+    Expression * actionFinDeBoucle = new Affectation(i, new Somme(i, new Constante(1)));
+    // calcul = (res = res * i)
+    Variable * res = new Variable("res", 1);
+    Expression * calcul(new Affectation(res, new Produit(res,i)));
+
+    // pour = for (i = 1; x > i; i = i + 1) res = res * i
+    Expression * pour = new Pour(init, condition, actionFinDeBoucle, calcul);
+    cout << *pour << "\n EVAL pour : " << pour->eval() << endl;
+    cout << x->eval() <<"!" << " = " << res->eval() << endl;
+
+    // x = 5
+    x->set(5.0);
+    cout << *x << " = " << x->eval() << endl;
+    // condition = (x > i - 1)
+    condition = new Superieur(x, new Somme(i, new Constante(-1)));
+    // pour = for (i = 1; x > i; i = i + 1) res = res * i
+    res->set(1);
+    pour = new Pour(init, condition, actionFinDeBoucle, calcul);
+    cout << *pour <<  "\n EVAL pour : " << pour->eval() << endl;
+    cout << x->eval() <<"!" << " = " << res->eval() << endl;
+
+    Variable::effacerMemoire();
+}
+
 int main()
 {
-    testConstante();
-    testCosinus();
-    testBinaire();
-    testVariable1();
-    testVariable2();
-    testConditionnel();
-    testIfThenElse();
+//    testConstante();
+//    testCosinus();
+//    testBinaire();
+//    testVariable1();
+//    testVariable2();
+//    testConditionnel();
+//    testIfThenElse();
+//    testBloc();
+        testPour1();
     return 0;
+
 }
 

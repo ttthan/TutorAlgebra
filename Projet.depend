@@ -63,7 +63,7 @@
 1454106499 source:e:\study\c++\projet\projet_cpp\src\unaire.cpp
 	"unaire.h"
 
-1460256189 source:e:\github\tutoralgebra\main.cpp
+1460260361 source:e:\github\tutoralgebra\main.cpp
 	<iostream>
 	<fstream>
 	"expression.h"
@@ -77,6 +77,8 @@
 	"affectation.h"
 	"conditionnel.h"
 	"ifThenElse.h"
+	"bloc.h"
+	"boucle.h"
 
 1460236773 e:\github\tutoralgebra\include\expression.h
 	<iostream>
@@ -147,7 +149,7 @@
 1460232660 e:\github\tutoralgebra\include\somme.h
 	"binaire.h"
 
-1460255436 source:e:\github\tutoralgebra\src\superieur.cpp
+1460260869 source:e:\github\tutoralgebra\src\superieur.cpp
 	"superieur.h"
 
 1460178590 e:\github\tutoralgebra\include\superieur.h
@@ -182,4 +184,15 @@
 
 1460256291 source:e:\github\tutoralgebra\src\ifthenelse.cpp
 	"ifThenElse.h"
+
+1460259048 source:e:\github\tutoralgebra\src\bloc.cpp
+	"bloc.h"
+
+1460259020 e:\github\tutoralgebra\include\bloc.h
+
+1460259798 e:\github\tutoralgebra\include\boucle.h
+	"expression.h"
+
+1460260887 source:e:\github\tutoralgebra\src\boucle.cpp
+	"boucle.h"
 

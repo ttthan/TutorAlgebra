@@ -17,7 +17,7 @@ Superieur::Superieur(Expression *exp1, Expression *exp2):Binaire(exp1,exp2,">")
 
 double Superieur::eval() const
 {
-    if(_gauche->eval() >= _droite->eval())
+    if(_gauche->eval() > _droite->eval())
         return 1;
     return 0;
 }
