@@ -46,8 +46,14 @@ double Sin::eval() const
 
 Expression* Sin::deriver(const string& var)
 {
-    //return new Produit(_op->deriver(var),new Cos(_op));
+    return new Produit(_op->deriver(var),new Cos(_op));
 }
+
+Expression *Sin::simplifier()
+{
+    return new Sin(_op->simplifier());
+}
+
 
 Cos::Cos()
 {
@@ -77,7 +83,12 @@ double Cos::eval() const
 
 Expression *Cos::deriver(const string& var)
 {
-    //return new Produit(_op->deriver(var),new Sin(_op));
+    return new Produit(_op->deriver(var),new Sin(_op));
+}
+
+Expression *Cos::simplifier()
+{
+    return new Cos(_op->simplifier());
 }
 
 Exponentielle::Exponentielle()
@@ -110,6 +121,12 @@ Expression* Exponentielle::deriver(const string &var)
 {
 
 }
+
+Expression *Exponentielle::simplifier()
+{
+    return new Exponentielle(_op->simplifier(),_op->simplifier());
+}
+
 
 string Exponentielle::afficher() const
 {

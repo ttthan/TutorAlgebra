@@ -34,6 +34,11 @@ Expression* Affectation::deriver(const string &var)
 
 }
 
+Expression *Affectation::simplifier()
+{
+
+}
+
 string Affectation::afficher() const
 {
     ostringstream os;

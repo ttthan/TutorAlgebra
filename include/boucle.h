@@ -13,6 +13,7 @@ class Pour : public Expression
         friend ostream & operator << (ostream & os, const Pour &);
         double eval() const;
         Expression *deriver(const string &);
+        Expression *simplifier();
     protected:
     private:
         Expression *_init, *_cond, *_incr, *_calcul;

@@ -1,6 +1,7 @@
 #ifndef UNAIRE_H
 #define UNAIRE_H
 #include "expression.h"
+#include "binaire.h"
 
 class Unaire : public Expression
 {
@@ -24,6 +25,7 @@ class Sin : public Unaire
         Expression* clone() const;
         double eval() const;
         Expression *deriver(const string &);
+        Expression *simplifier();
 
     protected:
         double val;
@@ -38,6 +40,7 @@ class Cos : public Unaire
         virtual ~Cos();
         double eval() const;
         Expression *deriver(const string &);
+        Expression *simplifier();
         Expression* clone() const;
     protected:
         double val;
@@ -52,6 +55,7 @@ class Exponentielle : public Unaire
         virtual ~Exponentielle();
         double eval() const;
         Expression *deriver(const string &);
+        Expression *simplifier();
         Expression* clone() const;
         string afficher() const;
         friend ostream& operator<<(ostream&, const Exponentielle &);

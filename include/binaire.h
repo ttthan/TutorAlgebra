@@ -21,6 +21,7 @@ class Difference : public Binaire
         virtual ~Difference();
         double eval() const;
         Expression *deriver(const string &);
+        Expression *simplifier();
         Expression *clone() const;
         string afficher() const;
         Difference(Expression *, Expression *, const string& name="-");
@@ -37,6 +38,7 @@ class Somme : public Binaire
         virtual ~Somme();
         double eval() const;
         Expression *deriver(const string &);
+        Expression *simplifier();
         Expression *clone() const;
         string afficher() const;
         Somme(Expression *, Expression *, const string& name="+");
@@ -54,6 +56,7 @@ class Produit : public Binaire
         virtual ~Produit();
         double eval() const;
         Expression *deriver(const string &);
+        Expression *simplifier();
         Expression* clone() const;
         string afficher() const;
         Produit(Expression *, Expression *, const string& name="*");
@@ -72,6 +75,7 @@ class Division : public Binaire
         Expression* clone() const;
         string afficher() const;
         Expression *deriver(const string &);
+        Expression *simplifier();
         Division(Expression *, Expression *, const string& name="/");
         friend ostream& operator<<(ostream&, const Division &);
 
@@ -86,6 +90,7 @@ class Superieur : public Binaire
         virtual ~Superieur();
         double eval() const;
         Expression *deriver(const string &);
+        Expression *simplifier();
         Expression* clone() const;
         string afficher() const;
         Superieur(Expression *, Expression *);
@@ -102,6 +107,7 @@ class Inferieur : public Binaire
         virtual ~Inferieur();
         double eval() const;
         Expression *deriver(const string &);
+        Expression *simplifier();
         Expression* clone() const;
         string afficher() const;
         Inferieur(Expression *, Expression *);
@@ -118,6 +124,7 @@ class SuperieurEgal : public Binaire
         virtual ~SuperieurEgal();
         double eval() const;
         Expression *deriver(const string &);
+        Expression *simplifier();
         Expression* clone() const;
         string afficher() const;
         SuperieurEgal(Expression *, Expression *);
@@ -134,6 +141,7 @@ class InferieurEgal : public Binaire
         virtual ~InferieurEgal();
         double eval() const;
         Expression *deriver(const string &);
+        Expression *simplifier();
         Expression* clone() const;
         string afficher() const;
         InferieurEgal(Expression *, Expression *);

@@ -25,6 +25,11 @@ Expression* Pour::deriver(const string &var)
 
 }
 
+Expression * Pour::simplifier()
+{
+
+}
+
 string Pour::afficher() const
 {
     return _nom + " (" + _init->afficher() + " ; " + _cond->afficher() + " ; "    + _incr->afficher() + ") { " + _calcul->afficher() + " }";

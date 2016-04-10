@@ -30,6 +30,11 @@ double Variable::eval() const
     return _variables[_id];
 }
 
+Expression *Variable::simplifier()
+{
+
+}
+
 Expression* Variable::deriver(const string &var)
 {
     double value=0.0;

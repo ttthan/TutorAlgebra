@@ -29,6 +29,11 @@ Expression* Conditionnel::deriver(const string &var)
 
 }
 
+Expression *Conditionnel::simplifier()
+{
+
+}
+
 ostream & operator << (ostream & os, const Conditionnel & conditionnel)
 {
 	os << conditionnel.afficher();

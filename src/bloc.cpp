@@ -59,6 +59,11 @@ Expression* Bloc::deriver(const string &var)
 
 }
 
+Expression * Bloc::simplifier()
+{
+
+}
+
 void Bloc::add(Expression* expression)
 {
 

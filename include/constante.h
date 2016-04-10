@@ -10,6 +10,7 @@ class Constante : public Expression
         virtual ~Constante();
         virtual double eval() const;
         Expression *deriver(const string &);
+        Expression *simplifier();
         string afficher() const;
         Expression* clone() const;
         friend ostream& operator<<(ostream&, const Constante &);

@@ -49,6 +49,11 @@ Expression *Somme::deriver(const string &var)
     return new Somme( _gauche->deriver(var), _droite->deriver(var));
 }
 
+Expression * Somme::simplifier()
+{
+
+}
+
 string Somme::afficher() const
 {
      return "(" + _gauche->afficher() + Expression::_nom + _droite->afficher() + ")";
@@ -91,6 +96,11 @@ double Difference::eval() const
 Expression *Difference::deriver(const string &var)
 {
     return new Difference( _gauche->deriver(var),_droite->deriver(var));
+}
+
+Expression * Difference::simplifier()
+{
+
 }
 
 string Difference::afficher() const
@@ -137,6 +147,11 @@ Expression* Produit::deriver(const string &var)
     return new Somme( new Produit(_gauche->deriver(var),_droite ), new Produit(_gauche, _droite->deriver(var)));
 }
 
+Expression * Produit::simplifier()
+{
+
+}
+
 Expression* Produit::clone() const
 {
 	return new Produit(*this);
@@ -179,6 +194,11 @@ Expression* Division::deriver(const string &var)
     return new Division( new Difference( new Produit(_gauche->deriver(var),_droite ), new Produit(_gauche, _droite->deriver(var))) , new Produit(_droite, _droite));
 }
 
+Expression * Division::simplifier()
+{
+
+}
+
 Expression* Division::clone() const
 {
 	return new Division(*this);
@@ -218,6 +238,11 @@ double Superieur::eval() const
 }
 
 Expression* Superieur::deriver(const string &var)
+{
+
+}
+
+Expression * Superieur::simplifier()
 {
 
 }
@@ -265,6 +290,11 @@ Expression* Inferieur::deriver(const string &var)
 
 }
 
+Expression * Inferieur::simplifier()
+{
+
+}
+
 string Inferieur::afficher() const
 {
     return ( "(" + _gauche->afficher()+ " <" + _droite->afficher() + ")");
@@ -308,6 +338,11 @@ Expression* SuperieurEgal::deriver(const string &var)
 
 }
 
+Expression * SuperieurEgal::simplifier()
+{
+
+}
+
 string SuperieurEgal::afficher() const
 {
     return ( "(" + _gauche->afficher()+ " >= " + _droite->afficher() + ")");
@@ -347,6 +382,11 @@ double InferieurEgal::eval() const
 }
 
 Expression* InferieurEgal::deriver(const string &var)
+{
+
+}
+
+Expression *InferieurEgal::simplifier()
 {
 
 }

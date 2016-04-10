@@ -36,6 +36,11 @@ Expression* IfThenElse::deriver(const string &var)
 
 }
 
+Expression * IfThenElse::simplifier()
+{
+
+}
+
 ostream & operator << (ostream & os, const IfThenElse & conditionnel)
 {
 	os << conditionnel.afficher();

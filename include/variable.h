@@ -14,6 +14,7 @@ class Variable : public Expression
         Variable(const string&);
         double eval() const;
         Expression *deriver(const string &);
+        Expression *simplifier();
         virtual ~Variable();
         string afficher() const;
         Expression* clone() const;

@@ -14,6 +14,7 @@ class Conditionnel : public Expression
         friend ostream & operator << (ostream & os, const Conditionnel &);
         double eval() const;
         Expression *deriver(const string &);
+        Expression *simplifier();
     private:
         Binaire *_cond;
         Expression *_exp1, *_exp2;

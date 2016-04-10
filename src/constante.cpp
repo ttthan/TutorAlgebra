@@ -25,9 +25,13 @@ double Constante::eval() const
 }
 
 Expression* Constante::deriver(const string &var)
-
 {
 
+}
+
+Expression *Constante::simplifier()
+{
+    return this;
 }
 
 string Constante::afficher() const

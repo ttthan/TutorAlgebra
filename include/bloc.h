@@ -15,6 +15,7 @@ class Bloc : public Expression
         friend ostream & operator << (ostream & os, const Bloc &);
         double eval() const;
         Expression *deriver(const string &);
+        Expression *simplifier();
         void add(Expression*);
     private:
         list<Expression*> _exp;
