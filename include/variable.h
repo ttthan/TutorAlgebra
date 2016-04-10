@@ -20,8 +20,8 @@ class Variable : public Expression
         static void effacerMemoire();
     protected:
     private:
-        const std::string _id;
-        static std::map<std::string, double> _variables;
+        const string _id;
+        static map<string, double> _variables;
 
 };
 

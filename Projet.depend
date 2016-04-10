@@ -63,7 +63,7 @@
 1454106499 source:e:\study\c++\projet\projet_cpp\src\unaire.cpp
 	"unaire.h"
 
-1460260361 source:e:\github\tutoralgebra\main.cpp
+1460293408 source:e:\github\tutoralgebra\main.cpp
 	<iostream>
 	<fstream>
 	"expression.h"
@@ -80,7 +80,7 @@
 	"bloc.h"
 	"boucle.h"
 
-1460236773 e:\github\tutoralgebra\include\expression.h
+1460291556 e:\github\tutoralgebra\include\expression.h
 	<iostream>
 	<sstream>
 	<string>
@@ -113,7 +113,7 @@
 1460178497 source:e:\github\tutoralgebra\src\cos.cpp
 	"cos.h"
 
-1460256256 source:e:\github\tutoralgebra\src\expression.cpp
+1460291549 source:e:\github\tutoralgebra\src\expression.cpp
 	"expression.h"
 
 1460171548 source:e:\github\tutoralgebra\src\unaire.cpp
@@ -159,7 +159,7 @@
 1460179623 source:e:\github\tutoralgebra\src\variable.cpp
 	"variable.h"
 
-1460179594 e:\github\tutoralgebra\include\variable.h
+1460283307 e:\github\tutoralgebra\include\variable.h
 	<iostream>
 	<map>
 	"expression.h"
@@ -185,10 +185,13 @@
 1460256291 source:e:\github\tutoralgebra\src\ifthenelse.cpp
 	"ifThenElse.h"
 
-1460259048 source:e:\github\tutoralgebra\src\bloc.cpp
+1460293368 source:e:\github\tutoralgebra\src\bloc.cpp
 	"bloc.h"
 
-1460259020 e:\github\tutoralgebra\include\bloc.h
+1460293072 e:\github\tutoralgebra\include\bloc.h
+	<list>
+	"expression.h"
+	"binaire.h"
 
 1460259798 e:\github\tutoralgebra\include\boucle.h
 	"expression.h"

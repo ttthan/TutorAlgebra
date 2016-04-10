@@ -20,7 +20,7 @@ string IfThenElse::afficher() const
 {
    // ostringstream os;
 
-	return "if (" + _cond->afficher() + ") \n  " + _exp1->afficher() + "\n }else{\n" + _exp2->afficher() + "\n}";
+	return "if (" + _cond->afficher() + ") { \n  " + _exp1->afficher() + "\n }else{\n" + _exp2->afficher() + "\n}";
 	//return os.str();
 
 
