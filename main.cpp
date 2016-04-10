@@ -11,6 +11,7 @@
 #include "variable.h"
 #include "affectation.h"
 #include "conditionnel.h"
+#include "ifThenElse.h"
 
 
 using namespace std;
@@ -111,6 +112,23 @@ void testConditionnel ()
     Variable::effacerMemoire();
 }
 
+void testIfThenElse()
+{
+    // x = 0
+    Variable  * x = new Variable("x", 8);
+
+    // expr = if (x > 0) x = x + 10  else x = x * 10
+    IfThenElse * expr =
+        new IfThenElse(new Superieur(x, new Constante(0.0)),
+                       new Affectation(x, new Somme(x, new Constante(10.0))),
+                       new Affectation(x, new Produit(x, new Constante(10.0))));
+    cout << *x << " = " << x->eval() << endl;
+    cout << *expr << "\n EVAL if then else : " << expr->eval() << endl;;
+    cout << *x << " = " << x->eval() << endl;
+
+    Variable::effacerMemoire();
+}
+
 int main()
 {
     testConstante();
@@ -119,6 +137,7 @@ int main()
     testVariable1();
     testVariable2();
     testConditionnel();
+    testIfThenElse();
     return 0;
 }
 

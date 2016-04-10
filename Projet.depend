@@ -63,7 +63,7 @@
 1454106499 source:e:\study\c++\projet\projet_cpp\src\unaire.cpp
 	"unaire.h"
 
-1460236525 source:e:\github\tutoralgebra\main.cpp
+1460256189 source:e:\github\tutoralgebra\main.cpp
 	<iostream>
 	<fstream>
 	"expression.h"
@@ -76,6 +76,7 @@
 	"variable.h"
 	"affectation.h"
 	"conditionnel.h"
+	"ifThenElse.h"
 
 1460236773 e:\github\tutoralgebra\include\expression.h
 	<iostream>
@@ -110,7 +111,7 @@
 1460178497 source:e:\github\tutoralgebra\src\cos.cpp
 	"cos.h"
 
-1460236833 source:e:\github\tutoralgebra\src\expression.cpp
+1460256256 source:e:\github\tutoralgebra\src\expression.cpp
 	"expression.h"
 
 1460171548 source:e:\github\tutoralgebra\src\unaire.cpp
@@ -146,7 +147,7 @@
 1460232660 e:\github\tutoralgebra\include\somme.h
 	"binaire.h"
 
-1460236693 source:e:\github\tutoralgebra\src\superieur.cpp
+1460255436 source:e:\github\tutoralgebra\src\superieur.cpp
 	"superieur.h"
 
 1460178590 e:\github\tutoralgebra\include\superieur.h
@@ -165,13 +166,20 @@
 	"binaire.h"
 	"variable.h"
 
-1460178280 source:e:\github\tutoralgebra\src\affectation.cpp
+1460256154 source:e:\github\tutoralgebra\src\affectation.cpp
 	"affectation.h"
 
 1460230503 e:\github\tutoralgebra\include\conditionnel.h
 	"expression.h"
 	"binaire.h"
 
-1460234875 source:e:\github\tutoralgebra\src\conditionnel.cpp
+1460255790 source:e:\github\tutoralgebra\src\conditionnel.cpp
 	"conditionnel.h"
+
+1460241136 e:\github\tutoralgebra\include\ifthenelse.h
+	"expression.h"
+	"binaire.h"
+
+1460256291 source:e:\github\tutoralgebra\src\ifthenelse.cpp
+	"ifThenElse.h"
 
