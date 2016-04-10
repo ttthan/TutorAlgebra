@@ -63,7 +63,7 @@
 1454106499 source:e:\study\c++\projet\projet_cpp\src\unaire.cpp
 	"unaire.h"
 
-1460293408 source:e:\github\tutoralgebra\main.cpp
+1460293867 source:e:\github\tutoralgebra\main.cpp
 	<iostream>
 	<fstream>
 	"expression.h"
@@ -182,10 +182,10 @@
 	"expression.h"
 	"binaire.h"
 
-1460256291 source:e:\github\tutoralgebra\src\ifthenelse.cpp
+1460293451 source:e:\github\tutoralgebra\src\ifthenelse.cpp
 	"ifThenElse.h"
 
-1460293368 source:e:\github\tutoralgebra\src\bloc.cpp
+1460294576 source:e:\github\tutoralgebra\src\bloc.cpp
 	"bloc.h"
 
 1460293072 e:\github\tutoralgebra\include\bloc.h

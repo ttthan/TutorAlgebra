@@ -18,18 +18,31 @@ Bloc::Bloc(const string& nom, Expression* exp1) : Expression("bloc"), _nom(nom)
 
 string Bloc::afficher() const
 {
-    list<Expression *>::const_iterator it = _exp.begin();
-	string str("{\n");
-	while (it != _exp.end())
+    string str = "{\n";
+    list<Expression*>::const_iterator it;
+	for (it = _exp.begin(); it != _exp.end(); it++)
 	{
-		Expression * tmp = *it;
-		str.append("\t");
-		str.append(tmp->afficher());
-		str.append("\n");
-		it++;
+	    Expression * tmp = *it;
+	    str.append("");
+	    str.append(tmp->afficher());
+	    str.append("\n");
+		//str += (*it)->afficher();
+
 	}
-	str.append("}");
+	str += "\n}";
 	return str;
+//    list<Expression *>::const_iterator it = _exp.begin();
+//	string str("{\n");
+//	while (it != _exp.end())
+//	{
+//		Expression * tmp = *it;
+//		str.append("\t");
+//		str.append(tmp->afficher());
+//		str.append("\n");
+//		it++;
+//	}
+//	str.append("}");
+//	return str;
 
 }
 
@@ -47,6 +60,13 @@ ostream & operator << (ostream & os, const Bloc & bloc)
 
 double Bloc::eval() const
 {
+    list<Expression*>::const_iterator it;
+	double value;
+	for (it = _exp.begin(); it != _exp.end(); it++)
+	{
+		value = (*it)->eval();
+	}
+	return value;
     Expression * tmp = _exp.back();
 	return tmp->eval();
 }
@@ -54,5 +74,5 @@ double Bloc::eval() const
 void Bloc::add(Expression* expression)
 {
 
-	this->_exp.push_back(expression->clone());
+	this->_exp.push_back(expression);
 }
